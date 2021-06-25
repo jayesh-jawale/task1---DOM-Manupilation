@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div style="width: 50%; float: left;">
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for="age">Age</label>
+        <input type="text" id="age">
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <button>Submit</button>
+    </form>
+</div>
+
+<div style="width: 50%; float: right;">
+<table id="getTable">
+<thead>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Email</td>
+    </tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+
+    <script src="./dynamicData.js"></script>
+</body>
+</html>
